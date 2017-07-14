@@ -96,7 +96,7 @@ public class DirectoryWatchService implements CommandLineRunner {
 
     @Scheduled(fixedRate = 10000)
     public void discoverDirectory() {
-        String dir = watchingDriectory + DateUtil.getTomorrowStr();
+        String dir = watchingDriectory + DateUtil.getCurrentDayStr();
         File file = new File(dir);
         if (file.exists()) {
             if (file.isDirectory()) {
