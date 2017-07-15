@@ -16,8 +16,8 @@ public class HackSakllyApplication {
 
     public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(HackSakllyApplication.class, args);
-        String[] beanNames = ctx.getBeanNamesForAnnotation(Service.class);
-        System.out.println("Service注解beanNames个数：" + beanNames.length);
+//        String[] beanNames = ctx.getBeanNamesForAnnotation(Service.class);
+//        System.out.println("Service注解beanNames个数：" + beanNames.length);
         for (String bn : beanNames) {
             System.out.println(bn);
         }
